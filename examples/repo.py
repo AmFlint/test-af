@@ -89,8 +89,6 @@ def example_astronauts():
 
         print(f"{name} is currently in space flying on the {craft}! {greeting}")
         print("Antoine")
-        print(" Omg")
-        raise Exception
 
     # Use dynamic task mapping to run the print_astronaut_craft task for each
     # Astronaut in space
