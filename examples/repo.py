@@ -48,7 +48,7 @@ def example_astronauts():
         so they can be used in a downstream pipeline. The task returns a list
         of Astronauts to be used in the next task.
         """
-        print("antoine again damn ee")
+        print("antoine again damn eetest")
         print("test, again")
         try:
             r = requests.get("http://api.open-notify.org/astros.json")
