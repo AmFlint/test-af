@@ -9,7 +9,7 @@ with DAG(
 ):
     BashOperator(
         task_id="extract",
-        bash_command="touch 'hello world' && date && sleep 6",
+        bash_command="touch 'hello world' && date && sleep 5",
         cwd=".",
     )
 
