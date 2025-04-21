@@ -49,6 +49,7 @@ def example_astronauts():
         of Astronauts to be used in the next task.
         """
         print("antoine again")
+        print("test")
         try:
             r = requests.get("http://api.open-notify.org/astros.json")
             r.raise_for_status()
