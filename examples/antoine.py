@@ -15,7 +15,7 @@ with DAG(
 
     BashOperator(
         task_id="transform",
-        bash_command="sleep 1",
+        bash_command="echo 'hello from logs'",
         cwd=".",
     )
 
