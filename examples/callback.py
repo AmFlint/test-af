@@ -15,11 +15,11 @@ def my_dag_failure_callback(context):
     on_success_callback=my_dag_success_callback,
     on_failure_callback=my_dag_failure_callback,
 )
-def async_dag_1():
+def callback_dag_antoine():
     DateTimeSensorAsync(
         task_id="async_task",
         target_time="""{{ macros.datetime.utcnow() + macros.timedelta(seconds=10) }}""",
     )
 
 
-async_dag_1()
+callback_dag_antoine()
