@@ -24,3 +24,9 @@ with DAG(
         bash_command="true",
         cwd=".",
     )
+
+    BashOperator(
+        task_id="make",
+        bash_command="echo 'testing from git'",
+        cwd=".",
+    )
