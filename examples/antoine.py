@@ -6,6 +6,7 @@ with DAG(
     "antoine_dag",
     schedule=None,
     start_date=(pendulum.datetime(2024, 12, 1, tz="UTC")),
+    tags=["antoine"],
 ):
     BashOperator(
         task_id="extract",
